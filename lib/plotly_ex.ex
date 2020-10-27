@@ -16,8 +16,7 @@ defmodule PlotlyEx do
         Plotly.plot('plotly-ex-body-<%= id %>', <%= data %>, <%= layout %>, <%= config %>)
       </script>
     </div>
-    """
-    ,data: json_data, layout: json_layout, config: json_config, id: unique_id)
+    """, data: json_data, layout: json_layout, config: json_config, id: unique_id)
     #    EEx.eval_file(filepath, data: json_data, layout: json_layout, config: json_config, id: unique_id)
   end
 
